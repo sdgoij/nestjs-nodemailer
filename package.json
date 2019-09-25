@@ -6,7 +6,10 @@
   "types": "dist/index",
   "private": false,
   "scripts": {
-    "preversion": "rm -rf dist && tsc -p tsconfig.json",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "lint": "echo 'todo: setup tslint or eslint'",
+    "prepare": "npx install-peers-cli && npm run build",
+    "preversion": "npm run lint",
     "version": "git add .",
     "postversion": "git push && git push --tags",
     "test": "jest"
