@@ -5,6 +5,9 @@ export { MailerModule } from './mailer.module';
 export { PugAdapter } from './adapters/pug.adapter';
 export { HandlebarsAdapter } from './adapters/handlebars.adapter';
 
+/** Constants **/
+export * from './constants/mailer-options.constant';
+
 /** Interfaces **/
 export { MailerOptions } from './interfaces/mailer-options.interface';
 export { TemplateAdapter } from './interfaces/template-adapter.interface';
